@@ -209,7 +209,7 @@
 		<v-footer class="bg-grey-lighten-1">
 			<v-row justify="center" no-gutters>
 			<v-col class="text-center mb-5" cols="12">
-				Sample provided by <a style="text-decoration: none;" href="https://twogenidentity.com"> ©2023 TwoGenIdentity.</a>All rights reserved 
+				Sample provided by <a style="text-decoration: none;" href="https://keycloak.org"> ©2024 Keycloak</a>
 			</v-col>
 			</v-row>
   		</v-footer>

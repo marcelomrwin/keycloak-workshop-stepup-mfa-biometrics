@@ -5,7 +5,7 @@ RUN mvn install -DskipTests
 
 
 FROM openjdk:11-jre-slim
-LABEL maintainer="Martin Besozzi <embesozzi@gmail.com>"
+LABEL maintainer="Keycloak <admin@keycloak.org>"
 ARG GIT_SHA1=unspecified
 LABEL git_commit=$GIT_SHA1
 ARG BUILD_DATE=unspecified

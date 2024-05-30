@@ -3,7 +3,7 @@ version: '3'
 services:
   oidc-stepup-demobank-spa:
     build: ./oidc-stepup-demobank-spa
-    image: twogenidentity/oidc-stepup-demobank-spa:latest
+    image: marcelodsales/oidc-stepup-demobank-spa:latest
     container_name: oidc-stepup-demobank-spa
     environment:
       KC_URL: ${DOMAIN_URL}
@@ -13,7 +13,7 @@ services:
       - keycloak   
   oidc-demobankloan-vue:
     build: ./oidc-demobank-vue
-    image: twogenidentity/oidc-demobankloan-vue:latest
+    image: marcelodsales/oidc-demobankloan-vue:latest
     container_name: oidc-demobank-vue
     ports:
      - "8002:80"
@@ -21,7 +21,7 @@ services:
       - ./oidc-demobank-vue/oidc-config.dev.js:/usr/share/nginx/html/dist/oidc-config.js
   oauth-stepup-demoapi-spring:
     build: ./oauth-stepup-demoapi-spring
-    image: twogenidentity/oauth-stepup-demoapi-spring:latest
+    image: marcelodsales/oauth-stepup-demoapi-spring:latest
     container_name: oauth-stepup-demoapi-spring
     environment:
       OIDC_JWK_SET_URI: http://keycloak:8080/realms/bank/protocol/openid-connect/certs  

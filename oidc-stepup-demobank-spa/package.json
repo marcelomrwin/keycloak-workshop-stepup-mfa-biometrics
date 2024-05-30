@@ -1,7 +1,7 @@
 {
     "name": "oidc-stepup-demobank-spa",
     "version": "1.0.0",
-    "author": "Martin Besozzi <embesozzi@gmail.com>",
+    "author": "Keycloak <admin@keycloak.org>",
     "license": "MIT",
     "scripts": {
       "start": "node app.js"

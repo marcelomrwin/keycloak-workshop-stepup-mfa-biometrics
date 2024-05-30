@@ -8,7 +8,7 @@ COPY . .
 RUN npm run build
 
 FROM nginx:stable-alpine as release-stage
-LABEL maintainer="Martin Besozzi <embesozzi@gmail.com>"
+LABEL maintainer="Keycloak <admin@keycloak.org>"
 
 COPY --from=build-stage /app/dist /usr/share/nginx/html/dist
 COPY nginx/default.conf /etc/nginx/conf.d/default.conf
